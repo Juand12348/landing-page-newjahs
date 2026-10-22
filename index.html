@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Jahs | Aplicación web con IA para la gestión empresarial</title>
+  <meta name="description" content="Aplicación web para New Jahs: tienda virtual, gestor de inventario y Chat Bot con IA para una MiPyme de ropa para hombre." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Barra de anuncios (igual que la app) -->
+  <div class="announce" aria-label="Anuncios">
+    <div class="announce__track">
+      <span>TIENDA VIRTUAL · INVENTARIO · CHAT BOT CON IA</span>
+      <span>ENVÍOS A TODA COLOMBIA</span>
+      <span>PROYECTO DE GRADO · TECNOLOGÍA EN DESARROLLO DE SOFTWARE</span>
+      <span>TIENDA VIRTUAL · INVENTARIO · CHAT BOT CON IA</span>
+      <span>ENVÍOS A TODA COLOMBIA</span>
+      <span>PROYECTO DE GRADO · TECNOLOGÍA EN DESARROLLO DE SOFTWARE</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="New Jahs, inicio">
+        <img src="https://new-jahs-frontend.vercel.app/assets/Logo-DQLWJoKn.png" alt="" class="brand__logo" onerror="this.style.display='none'" />
+        <span class="brand__name">NEW JAHS</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#introduccion">Introducción</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#conclusiones">Conclusiones</a>
+      </nav>
+      <a href="https://new-jahs-frontend.vercel.app/" target="_blank" rel="noopener" class="btn btn--small header__cta">Ver la app</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">Encuentro Académico REDIS 2026 · Semillero</p>
+        <h1 class="reveal">Una aplicación web hecha para que <em>New Jahs</em> venda y se organice mejor</h1>
+        <p class="hero__lead reveal">
+          Tienda virtual, control de inventario y un Chat Bot con IA disponible 24/7, todo en un solo lugar
+          para una MiPyme que produce y vende ropa para hombre.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="https://new-jahs-frontend.vercel.app/" target="_blank" rel="noopener" class="btn">Visitar la tienda</a>
+          <a href="#modulos" class="btn btn--ghost">Conocer los módulos</a>
+        </div>
+        <ul class="hero__stats reveal">
+          <li><strong data-count="3">0</strong><span>módulos integrados</span></li>
+          <li><strong data-count="6">0</strong><span>sprints de desarrollo</span></li>
+          <li><strong>24/7</strong><span>atención con IA</span></li>
+        </ul>
+      </div>
+      <a href="#introduccion" class="scroll-hint" aria-label="Bajar">SCROLL PARA DESCUBRIR</a>
+    </section>
+
+    <!-- Introducción -->
+    <section class="section" id="introduccion">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Introducción</p>
+          <h2>De una MiPyme a una marca que también vive en internet</h2>
+        </div>
+        <div class="prose reveal">
+          <p>
+            New Jahs es una MiPyme dedicada a la producción y venta de ropa para hombre, especialmente camisas.
+            En los últimos años se ha visto afectada por el avance tecnológico y el auge del comercio electrónico
+            en la industria textil.
+          </p>
+          <p>
+            Por esta razón la empresa busca implementar una aplicación web que cuente con una <strong>tienda virtual</strong>
+            para posicionar su empresa en internet, un <strong>gestor de inventario</strong> para el registro de los
+            movimientos de la mercancía y un <strong>Chat Bot con IA</strong> para la consulta de información rápida
+            que funcione las 24/7.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulos -->
+    <section class="section section--alt" id="modulos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Qué hace la app</p>
+          <h2>Tres módulos, un mismo negocio</h2>
+          <p class="muted">Cada módulo responde a una necesidad identificada en el planteamiento del problema: depender solo de canales físicos y no tener un control sistemático de la mercancía.</p>
+        </div>
+
+        <div class="modules">
+
+          <!-- Ecommerce -->
+          <article class="module reveal">
+            <div class="module__text">
+              <span class="module__num">01</span>
+              <h3>Comercio electrónico</h3>
+              <p>
+                Una tienda virtual donde los clientes exploran el catálogo, agregan prendas al carrito y finalizan
+                su compra. La empresa puede gestionar cada producto y mostrarlo al cliente de forma clara.
+              </p>
+              <ul class="ticks">
+                <li>Catálogo de camisas formales, casuales y deportivas</li>
+                <li>Carrito, pedidos y checkout</li>
+                <li>Registro de usuarios y funcionalidades según el rol</li>
+              </ul>
+            </div>
+            <div class="module__visual" aria-hidden="true">
+              <div class="mock mock--shop">
+                <div class="mock__bar"><i></i><i></i><i></i></div>
+                <div class="shop-grid">
+                  <div class="card"><div class="card__img c1"></div><b>CAMISAS FORMALES</b><small>Desde $ 75.000</small></div>
+                  <div class="card"><div class="card__img c2"></div><b>CAMISAS CASUALES</b><small>Desde $ 70.000</small></div>
+                  <div class="card"><div class="card__img c3"></div><b>CAMISAS DEPORTIVAS</b><small>Desde $ 65.000</small></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Inventario -->
+          <article class="module module--rev reveal">
+            <div class="module__text">
+              <span class="module__num">02</span>
+              <h3>Gestión de inventario</h3>
+              <p>
+                Un módulo que facilita el control, seguimiento y administración de los productos disponibles,
+                con registro de los movimientos de mercancía para saber siempre cuánto hay en stock.
+              </p>
+              <ul class="ticks">
+                <li>Registro del stock de la empresa</li>
+                <li>Entradas, salidas y movimientos de inventario</li>
+                <li>Reportes de ventas y proyecciones de las prendas</li>
+              </ul>
+            </div>
+            <div class="module__visual" aria-hidden="true">
+              <div class="mock mock--inv">
+                <div class="mock__bar"><i></i><i></i><i></i></div>
+                <table class="inv">
+                  <thead><tr><th>Prenda</th><th>Talla</th><th>Stock</th><th>Estado</th></tr></thead>
+                  <tbody>
+                    <tr><td>Camisa formal</td><td>M</td><td>24</td><td><span class="pill pill--ok">Disponible</span></td></tr>
+                    <tr><td>Camisa casual</td><td>L</td><td>9</td><td><span class="pill pill--warn">Stock bajo</span></td></tr>
+                    <tr><td>Camisa deportiva</td><td>S</td><td>0</td><td><span class="pill pill--out">Agotado</span></td></tr>
+                    <tr><td>Camisa formal</td><td>L</td><td>17</td><td><span class="pill pill--ok">Disponible</span></td></tr>
+                  </tbody>
+                </table>
+                <p class="mock__note">Datos ilustrativos</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chatbot -->
+          <article class="module reveal">
+            <div class="module__text">
+              <span class="module__num">03</span>
+              <h3>Chat Bot con IA</h3>
+              <p>
+                Un asistente que permite al usuario analizar ventas y consultar productos de la empresa en
+                cualquier momento, sin esperar a que alguien del equipo esté disponible.
+              </p>
+              <ul class="ticks">
+                <li>Consulta de productos y disponibilidad</li>
+                <li>Análisis de ventas</li>
+                <li>Funciona las 24 horas, los 7 días</li>
+              </ul>
+            </div>
+            <div class="module__visual">
+              <div class="mock mock--chat" id="chat" aria-label="Demostración del Chat Bot">
+                <div class="mock__bar"><i></i><i></i><i></i><span class="mock__title">Asistente New Jahs</span></div>
+                <div class="chat__log" id="chatLog" aria-live="polite">
+                  <div class="msg msg--bot">Hola, soy el asistente de New Jahs. Prueba una de estas preguntas 👇</div>
+                </div>
+                <div class="chat__chips" id="chatChips">
+                  <button type="button" data-q="¿Qué camisas tienen?">¿Qué camisas tienen?</button>
+                  <button type="button" data-q="¿Hay envíos a toda Colombia?">¿Hay envíos?</button>
+                  <button type="button" data-q="¿Cómo van las ventas?">¿Cómo van las ventas?</button>
+                </div>
+                <p class="mock__note">Demostración ilustrativa</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section class="section" id="objetivos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Objetivos</p>
+          <h2>Lo que queremos lograr</h2>
+        </div>
+
+        <div class="goal reveal">
+          <span class="goal__tag">Objetivo general</span>
+          <p>
+            Desarrollar una aplicación web para la gestión empresarial con IA para la MyPime New Jahs,
+            con el fin de fomentar organización y ventas digitales.
+          </p>
+        </div>
+
+        <ol class="goals">
+          <li class="reveal"><span>1</span><p>Implementar un módulo de catálogo por el cual se gestione cada uno de los productos y sea visualizado por los clientes.</p></li>
+          <li class="reveal"><span>2</span><p>Diseñar un sistema de comercio electrónico que permita a la empresa realizar ventas virtuales de sus productos de manera eficiente y accesible.</p></li>
+          <li class="reveal"><span>3</span><p>Desarrollar un módulo de gestión de inventario que facilite el control, seguimiento y administración de los productos disponibles.</p></li>
+          <li class="reveal"><span>4</span><p>Integrar un Chat Bot que permita al usuario analizar ventas y consultas de productos de la empresa.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Metodología -->
+    <section class="section section--alt" id="metodologia">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Metodología</p>
+          <h2>Desarrollo ágil con SCRUM</h2>
+          <p class="muted">
+            SCRUM es una metodología de desarrollo ágil encargada de gestionar y desarrollar proyectos de software,
+            dividiéndolos en ciclos cortos y repetitivos llamados Sprints.
+          </p>
+        </div>
+
+        <div class="sprints" id="sprints">
+          <div class="sprints__tabs" role="tablist" aria-label="Sprints">
+            <button role="tab" class="is-active" aria-selected="true" data-i="0">Sprint 1</button>
+            <button role="tab" aria-selected="false" data-i="1">Sprint 2</button>
+            <button role="tab" aria-selected="false" data-i="2">Sprint 3</button>
+            <button role="tab" aria-selected="false" data-i="3">Sprint 4</button>
+            <button role="tab" aria-selected="false" data-i="4">Sprint 5</button>
+            <button role="tab" aria-selected="false" data-i="5">Sprint 7</button>
+          </div>
+          <div class="sprints__panel" id="sprintPanel" role="tabpanel" aria-live="polite">
+            <h3 id="sprintTitle"></h3>
+            <p id="sprintText"></p>
+          </div>
+          <div class="sprints__bar" aria-hidden="true"><i id="sprintFill"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados -->
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Resultados</p>
+          <h2>Lo que se espera de la aplicación</h2>
+        </div>
+        <ul class="results">
+          <li class="reveal"><b>01</b><p>Realizar ventas a través de un comercio electrónico</p></li>
+          <li class="reveal"><b>02</b><p>Mostrar el catálogo de prendas de la empresa</p></li>
+          <li class="reveal"><b>03</b><p>Manejar distintos tipos de funcionalidades según el rol</p></li>
+          <li class="reveal"><b>04</b><p>Poder llevar un registro del stock de la empresa</p></li>
+          <li class="reveal"><b>05</b><p>Generar reportes de las ventas y proyecciones de las prendas</p></li>
+          <li class="reveal"><b>06</b><p>Consultar un Chat Bot que funcione las 24/7</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Conclusiones -->
+    <section class="section section--alt" id="conclusiones">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Conclusiones</p>
+          <h2>Tecnología adaptada al contexto de la MiPyme</h2>
+        </div>
+        <div class="prose reveal">
+          <p>
+            El presente proyecto permitió diseñar e implementar una solución de software para New Jahs, a la
+            producción y comercialización de ropa masculina a través del comercio electrónico. La solución integra
+            tres módulos que representan las necesidades identificadas en el planteamiento del problema, en
+            particular las dependencias a canales de ventas físicos únicamente y la ausencia de un control
+            sistemático de la mercancía.
+          </p>
+          <p>
+            Dado que por evidencia las MiPymes pueden acceder a herramientas tecnológicas adaptadas a sus
+            requerimientos siempre que la solución esté enfocada en su contexto operativo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias -->
+    <section class="section" id="referencias">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Referencias</p>
+          <h2>Marcas que sirvieron de referencia</h2>
+        </div>
+        <div class="refs">
+          <a class="ref reveal" href="https://wargosports.com" target="_blank" rel="noopener">
+            <b>WARGO</b><span>wargosports.com ↗</span>
+          </a>
+          <a class="ref reveal" href="https://www.gymshark.com" target="_blank" rel="noopener">
+            <b>GYMSHARK</b><span>gymshark.com ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Camisas hechas para quienes no se conforman</h2>
+        <p>Conoce la tienda virtual de New Jahs, el primer módulo de esta aplicación.</p>
+        <a href="https://new-jahs-frontend.vercel.app/" target="_blank" rel="noopener" class="btn">Ir a la tienda</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="brand__name">NEW JAHS</p>
+        <p class="muted">Desarrollo de una aplicación web para New Jahs.</p>
+      </div>
+      <div>
+        <p class="footer__label">Autor</p>
+        <p>Juan David Martínez Niño</p>
+        <p class="muted">Uniagustiniana · Tecnología en Desarrollo de Software</p>
+      </div>
+      <div>
+        <p class="footer__label">Evento</p>
+        <p>Encuentro Académico REDIS 2026</p>
+        <p class="muted">Semillero</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">© <span id="year"></span> New Jahs Clothes For Man · Bogotá, Colombia</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
